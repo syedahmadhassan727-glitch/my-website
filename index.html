@@ -1,93 +1,60 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stratos Financial Consulting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>Stratos Financial Consulting</h1>
+    <p>Your trusted partner in finance</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </header>
 
-header.hero {
-  background: #004080;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-header.hero h1 {
-  margin: 0;
-  font-size: 2.5em;
-}
+  <main>
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Consulting</h3>
+          <p>Expert advice to help you grow your business.</p>
+        </div>
+        <div class="card">
+          <h3>Auditing</h3>
+          <p>Accurate and transparent financial audits.</p>
+        </div>
+        <div class="card">
+          <h3>Advisory</h3>
+          <p>Strategic guidance for long‑term success.</p>
+        </div>
+      </div>
+    </section>
 
-header.hero p {
-  font-size: 1.2em;
-  margin: 10px 0;
-}
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We are a team of professionals dedicated to helping businesses achieve financial clarity and sustainable growth. With years of experience, we provide reliable consulting, auditing, and advisory services tailored to your needs.</p>
+    </section>
 
-.btn {
-  display: inline-block;
-  background: #ff9900;
-  color: white;
-  padding: 10px 20px;
-  margin-top: 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
 
-nav {
-  background: #eee;
-  padding: 10px;
-  text-align: center;
-}
-
-nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #004080;
-  font-weight: bold;
-}
-
-section {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.grid {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: #f4f4f4;
-  padding: 20px;
-  border-radius: 5px;
-  width: 250px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: auto;
-}
-
-form input, form textarea {
-  margin: 10px 0;
-  padding: 10px;
-  border: 1px solid #ccc;
-}
-
-button {
-  background: #004080;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
+  <footer>
+    <p>© 2026 Stratos Financial Consulting</p>
+  </footer>
+</body>
+</html>
