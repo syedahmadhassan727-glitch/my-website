@@ -6,10 +6,7 @@ body {
 }
 
 header.hero {
-  background-image: url("https://source.unsplash.com/1600x900/?finance,office");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: #004080;   /* solid blue background */
   color: white;
   text-align: center;
   padding: 60px 20px;
