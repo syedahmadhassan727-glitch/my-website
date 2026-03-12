@@ -91,3 +91,20 @@ footer {
   text-align: center;
   padding: 10px;
 }
+
+#testimonials {
+  background: #f9f9f9;
+  padding: 40px 20px;
+}
+
+#testimonials h2 {
+  margin-bottom: 20px;
+}
+
+#testimonials .card {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 5px;
+  width: 280px;
+}
