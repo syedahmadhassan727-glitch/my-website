@@ -2,80 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stratos Financial Consulting</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Header / Navigation -->
   <header class="hero">
-    <h1>Stratos Financial Consulting</h1>
-    <p>Your trusted partner in finance</p>
-    <a href="#contact" class="btn">Get in Touch</a>
+    <nav class="navbar">
+      <div class="logo">Stratos Financial Consulting</div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="cta">Get in Touch</a>
+    </nav>
+    <div class="hero-content">
+      <h1>Your trusted partner in finance</h1>
+      <a href="#contact" class="cta">Get in Touch</a>
+    </div>
   </header>
 
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <main>
-    <section id="services">
-      <h2>Our Services</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Consulting</h3>
-          <p>Expert advice to help you grow your business.</p>
-        </div>
-        <div class="card">
-          <h3>Auditing</h3>
-          <p>Accurate and transparent financial audits.</p>
-        </div>
-        <div class="card">
-          <h3>Advisory</h3>
-          <p>Strategic guidance for long‑term success.</p>
-        </div>
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Consulting</h3>
+        <p>Expert advice to help you grow.</p>
       </div>
-    </section>
+      <div class="card">
+        <h3>Auditing</h3>
+        <p>Accurate and transparent financial reporting.</p>
+      </div>
+      <div class="card">
+        <h3>Advisory</h3>
+        <p>Strategic guidance for long-term success.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="about">
-      <h2>About Us</h2>
-      <p>We are a team of professionals dedicated to helping businesses achieve financial clarity and sustainable growth. With years of experience, we provide reliable consulting, auditing, and advisory services tailored to your needs.</p>
-    </section>
-
+  <!-- Testimonials Section -->
   <section id="testimonials">
-  <h2>What Our Clients Say</h2>
-  <div class="grid">
-    <div class="card">
-      <p>"Stratos Financial Consulting provided clear strategies that helped us reduce costs and improve profitability within months."</p>
-      <strong>- Emily J.</strong>
+    <h2>What Our Clients Say</h2>
+    <div class="grid">
+      <div class="card">
+        <p>"Stratos helped us streamline our finances and grow with confidence."</p>
+        <strong>- Emily J.</strong>
+      </div>
+      <div class="card">
+        <p>"Professional, reliable, and insightful advisory services."</p>
+        <strong>- Michael S.</strong>
+      </div>
+      <div class="card">
+        <p>"Clear strategies that improved our profitability within months."</p>
+        <strong>- Jessica W.</strong>
+      </div>
     </div>
-    <div class="card">
-      <p>"Their auditing team was thorough and professional. We now have complete confidence in our financial reporting."</p>
-      <strong>- Michael S.</strong>
-    </div>
-    <div class="card">
-      <p>"The advisory services gave us the roadmap we needed to expand internationally. Truly a trusted partner."</p>
-      <strong>- Jessica W.</strong>
-    </div>
-  </div>
-</section>
+  </section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <form name="contact" method="POST" data-netlify="true">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
-
+  <!-- Footer -->
   <footer>
-  <p>© 2026 Stratos Financial Consulting</p>
-  <p>
-    <a href="#services">Services</a> | 
-    <a href="#about">About</a> | 
-    <a href="#contact">Contact</a>
-  </p>
-</footer>
+    <p>&copy; 2026 Stratos Financial Consulting. All rights reserved.</p>
+    <p><a href="#contact">Contact Us</a></p>
+  </footer>
+
+</body>
+</html>
