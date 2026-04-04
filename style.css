@@ -170,3 +170,102 @@ footer a {
   color: #ff9900;
   text-decoration: none;
 }
+
+#about {
+  padding: 40px 20px;
+  text-align: center;
+  background: #ffffff;
+}
+
+#about h2 {
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+#about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#services {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#services .grid {
+  display: flex;
+  flex-wrap: wrap; /* allows multiple rows */
+  justify-content: center;
+  gap: 20px;
+}
+
+#services .card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Testimonials Section */
+#testimonials {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+#testimonials h2 {
+  color: #004080;
+  margin-bottom: 30px;
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-style: italic;
+}
+
+.testimonial-card h4 {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Active navigation link */
+.nav-links a.active {
+  color: #ff6600; /* bright orange highlight */
+  font-weight: bold;
+  border-bottom: 2px solid #ff6600;
+}
+
+/* Get Started button styling */
+.navbar .cta {
+  background-color: #ff6600; /* bright orange */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .cta:hover {
+  background-color: #e65c00; /* darker orange on hover */
+}
