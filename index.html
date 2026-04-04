@@ -8,23 +8,22 @@
 </head>
 <body>
 
-  <!-- Top Contact Bar -->
-  <div class="top-bar">
-    <span>📞 +1 (555) 123-4567</span>
-    <span>✉ info@stratosfinancialconsulting.live</span>
-  </div>
+<!-- Top Contact Bar -->
+<div class="top-bar">
+  <span>✉ contact@stratosfinancialconsulting.live</span>
+</div>
 
   <!-- Main Header -->
   <header class="main-header">
     <div class="logo">Stratos Financial Consulting</div>
     <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-      <a href="#contact" class="cta">Get Started</a>
-    </nav>
+  <ul class="nav-links">
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#services-carousel">OUR SERVICES</a></li>
+    <li><a href="#testimonials">TESTIMONIALS</a></li>
+  </ul>
+  <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" class="cta">Get Started</a>
+</nav>
   </header>
 
   <!-- Hero Section -->
@@ -36,49 +35,105 @@
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Consulting</h3>
-        <p>Expert advice to help you grow.</p>
-      </div>
-      <div class="card">
-        <h3>Auditing</h3>
-        <p>Accurate and transparent financial reporting.</p>
-      </div>
-      <div class="card">
-        <h3>Advisory</h3>
-        <p>Strategic guidance for long-term success.</p>
-      </div>
-    </div>
-  </section>
+  <!-- About Section -->
+<section id="about">
+  <h2>About Stratos Financial Consulting</h2>
+  <p>
+    Stratos Financial Consulting is dedicated to providing expert financial, advisory, taxation, 
+    and governance solutions. We combine industry knowledge with personalized strategies to help 
+    businesses achieve sustainable growth and transparency.
+  </p>
+</section>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="grid">
-      <div class="card">
-        <p>"Stratos helped us streamline our finances and grow with confidence."</p>
-        <strong>- Emily J.</strong>
-      </div>
-      <div class="card">
-        <p>"Professional, reliable, and insightful advisory services."</p>
-        <strong>- Michael S.</strong>
-      </div>
-      <div class="card">
-        <p>"Clear strategies that improved our profitability within months."</p>
-        <strong>- Jessica W.</strong>
-      </div>
+<!-- Services Section -->
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>ERP Implementation</h3>
+      <p>Identifying business needs, setting goals, and selecting the right ERP system.</p>
     </div>
-  </section>
+    <div class="card">
+      <h3>Audit and Assurance</h3>
+      <p>Strengthening trust through meticulous audits.</p>
+    </div>
+    <div class="card">
+      <h3>Outsourcing</h3>
+      <p>Streamline finances, maximize efficiency – smart outsourcing for accounting success.</p>
+    </div>
+    <div class="card">
+      <h3>IFRS Consultancy</h3>
+      <p>IFRS solutions tailored for your business success.</p>
+    </div>
+    <div class="card">
+      <h3>Tax Services and Advisory</h3>
+      <p>Maximize savings with expert tax planning and filing.</p>
+    </div>
+    <div class="card">
+      <h3>Corporate Secretarial Advisory</h3>
+      <p>Implementing best practices for transparency and accountability.</p>
+    </div>
+    <div class="card">
+      <h3>Virtual CFO</h3>
+      <p>Cost-effective CFO solutions for growing businesses.</p>
+    </div>
+    <div class="card">
+      <h3>Back Office</h3>
+      <p>Reliable, efficient, and tailored back-office solutions.</p>
+    </div>
+  </div>
+</section>
+
+ <!-- Testimonials Section -->
+<section id="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <p>"Stratos Financial Consulting helped us streamline our accounting processes and gave us confidence in our audits."</p>
+      <h4>- Sarah Johnson, CFO at TechNova</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"Their advisory services provided clear strategies that improved our financial transparency and long-term growth."</p>
+      <h4>- Michael Lee, Founder of GreenEdge Solutions</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"The Virtual CFO service was a game-changer for our startup. Cost-effective and highly professional."</p>
+      <h4>- Ayesha Khan, CEO of FinGrow</h4>
+    </div>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2026 Stratos Financial Consulting. All rights reserved.</p>
     <p><a href="#contact">Contact Us</a></p>
   </footer>
+
+  <script>
+  // Highlight active nav link based on scroll position
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
